@@ -1,0 +1,158 @@
+//INICIO DE CODIGO
+
+
+C:\Users\Computo>node
+Welcome to Node.js v17.4.0.
+Type ".help" for more information.
+> var name="jose"
+undefined
+> var name="Andrea"
+undefined
+> name
+'Andrea'
+> name="Felipe"
+'Felipe'
+> let name="Julio"
+Uncaught SyntaxError: Identifier 'name' has already been declared
+> let color="Azul"
+undefined
+> let color="Negro"
+Uncaught SyntaxError: Identifier 'color' has already been declared
+> color="Amarillo"
+'Amarillo'
+> const name
+... ="Jose"
+Uncaught SyntaxError: Identifier 'name' has already been declared
+> const NAMES="Pablo"
+undefined
+> const NAMES="JOSE"
+Uncaught SyntaxError: Identifier 'NAMES' has already been declared
+> NAMES="JOSE"
+Uncaught TypeError: Assignment to constant variable.
+> for(var i=0; i<5; i++){}
+undefined
+> for(var i=0; i<5; i++)
+... for(var i=0; i<5; i++){
+... console.log(i)}
+0
+1
+2
+3
+4
+undefined
+> i
+6
+> for(let j=0; j<5; j++){console.log(j)}
+0
+1
+2
+3
+4
+undefined
+> j
+Uncaught ReferenceError: j is not defined
+> var a=5
+undefined
+> typeof(a)
+'number'
+> var a=String(a)
+undefined
+> typeof
+... (a)
+'string'
+> var a=Number(a)
+undefined
+> typeof
+... (a)
+'number'
+> var colors = ['Negro', 'Amarillo', 'Rojo']
+undefined
+> funtion getColorsD(valor){
+funtion getColorsD(valor){
+        ^^^^^^^^^^
+
+Uncaught SyntaxError: Unexpected identifier
+> funtion getColorsD(valor){}
+funtion getColorsD(valor){}
+        ^^^^^^^^^^
+
+Uncaught SyntaxError: Unexpected identifier
+> function getColorsD(valor){}
+undefined
+> function getColorsD(valor){
+... console.log('El color es ${valor}')
+... }
+undefined
+> for (var i=0; i< colors.length; i++){
+... getColorsD(colors[i])
+... }
+El color es ${valor}
+El color es ${valor}
+El color es ${valor}
+undefined
+> var colors = ['Negro', 'Amarillo', 'Rojo']
+undefined
+> function getColorsD(valor){
+... console.log('El color es ${valor}')
+... }
+undefined
+> for (var i=0; i < colors.length; i++){
+... getColorsD(colors[i])
+... }
+El color es ${valor}
+El color es ${valor}
+El color es ${valor}
+undefined
+> var colors = [`Negro`, `Amarillo`, `Rojo`]
+undefined
+> function getColorsD(valor){
+... console.log(`El color es ${valor}`)
+... }
+undefined
+> for(var i00; i < colors.length; i++){
+... getColorsD(colors[i])
+... }
+undefined
+> for(var i=0; i < colors.length; i++){
+... getColorsD(colors[i])
+... }
+El color es Negro
+El color es Amarillo
+El color es Rojo
+undefined
+> const getColorsE = function(valor){
+... console.log(valor)}
+undefined
+> for(var color of colors){getColors
+... E(colors)}
+Uncaught SyntaxError: Identifier 'color' has already been declared
+> for(var c of colors){getColorsE(c)}
+Negro
+Amarillo
+Rojo
+> const getColorsA = colorA => {console-log(colorA)}
+undefined
+> for(var elements of colors){getColorsA(element)}
+Uncaught ReferenceError: element is not defined
+> for(var element of colors){getColorsA(element)}
+Uncaught ReferenceError: log is not defined
+    at getColorsA (REPL111:1:31)
+> const getColorsA = colorA => {console-log(colorA)}
+Uncaught SyntaxError: Identifier 'getColorsA' has already been declared
+> const getColorsA = colorA => {console-log(colorA)}
+Uncaught SyntaxError: Identifier 'getColorsA' has already been declared
+> const getColorsA = colorA => {console.log(colorA)}
+Uncaught SyntaxError: Identifier 'getColorsA' has already been declared
+> const getColorsA = colorA => {console.log(colorsA)}
+Uncaught SyntaxError: Identifier 'getColorsA' has already been declared
+> const getColorsA = colorA => {console.log(colorA)}
+Uncaught SyntaxError: Identifier 'getColorsA' has already been declared
+> for(var element of colors){getColorsA8element)}
+for(var element of colors){getColorsA8element)}
+                                             ^
+
+Uncaught SyntaxError: Unexpected token ')'
+> for(var element of colors){getColorsA(element)}
+Uncaught ReferenceError: log is not defined
+    at getColorsA (REPL111:1:31)
+>
